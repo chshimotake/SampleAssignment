@@ -1,16 +1,21 @@
+float x1=250;
+float y1=250;
+float x2=250;
+float y2=250;
 
 void setup()
 {
-  size(200,100);
+  size(250,250);
 }
 void draw()
 {
-  fill(255,255,0);
-  ellipse(100,50,80,80);
-  arc(100,50,60,60,PI/8,7*PI/8);
-  fill(0,0,0);
-  ellipse(85,40,10,15);
-  ellipse(115,40,10,15);
+  	int lin=jump();
+  	println(lin);
+}
+float jump()
+{
+	float radi=Math.random(0,2PI);
+	return radi;
 }
 
 
